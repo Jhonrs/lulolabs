@@ -1,20 +1,24 @@
 {
-  "name": "lulolabs",
+  "name": "lulolabs-new",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "turbo format",
+    "typecheck": "turbo typecheck"
   },
   "devDependencies": {
-    "prettier": "3.9.6",
+    "@lulolabs/eslint-config": "workspace:*",
+    "@lulolabs/typescript-config": "workspace:*",
+    "prettier": "^3.9.10",
+    "prettier-plugin-tailwindcss": "^0.8.1",
     "turbo": "^2.11.10",
-    "typescript": "7.0.2"
+    "typescript": "^5"
   },
   "packageManager": "pnpm@11.25.0",
   "engines": {
-    "node": ">=24"
+    "node": ">=20.9.0"
   }
 }

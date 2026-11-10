@@ -1,9 +1,10 @@
 {
-  "extends": "@repo/typescript-config/react-library.json",
+  "extends": "@lulolabs/typescript-config/react-library.json",
   "compilerOptions": {
-    "outDir": "dist",
-    "strictNullChecks": true
+    "paths": {
+      "@lulolabs/ui/*": ["./src/*"]
+    }
   },
-  "include": ["src"],
+  "include": ["."],
   "exclude": ["node_modules", "dist"]
 }
